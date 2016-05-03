@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+	<id>com.appcelerator.sg.titaniumShare</id>
+	<name>titaniumShare</name>
+	<version>1.0</version>
+	<publisher>not specified</publisher>
+	<url></url>
+	<description></description>
+	<copyright>not specified</copyright>
+	<icon>appicon.png</icon>
+	<fullscreen>false</fullscreen>
+	<navbar-hidden>false</navbar-hidden>
+	<analytics>true</analytics>
+	<guid>e6aee620-7839-4b44-a174-47e3b4a04b25</guid>
+	<property name="ti.ui.defaultunit" type="string">dp</property>
+	<ios>
+		<enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+		<plist>
+			<dict>
+				<key>UISupportedInterfaceOrientations~iphone</key>
+				<array>
+					<string>UIInterfaceOrientationPortrait</string>
+				</array>
+				<key>UISupportedInterfaceOrientations~ipad</key>
+				<array>
+					<string>UIInterfaceOrientationPortrait</string>
+					<string>UIInterfaceOrientationPortraitUpsideDown</string>
+					<string>UIInterfaceOrientationLandscapeLeft</string>
+					<string>UIInterfaceOrientationLandscapeRight</string>
+				</array>
+				<key>UIRequiresPersistentWiFi</key>
+				<false/>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+				<key>UIStatusBarHidden</key>
+				<false/>
+				<key>UIStatusBarStyle</key>
+				<string>UIStatusBarStyleDefault</string>
+			</dict>
+		</plist>
+    <extensions>
+      <extension projectPath="extensions/titaniumShare/titaniumShare.xcodeproj">
+        <target name="titaniumShare">
+          <provisioning-profiles>
+            <device/>
+            <dist-appstore/>
+            <dist-adhoc/>
+          </provisioning-profiles>
+        </target>
+      </extension>
+    </extensions>		
+	</ios>
+	<android xmlns:android="http://schemas.android.com/apk/res/android">
+	</android>
+	<mobileweb>
+		<precache>
+		</precache>
+		<splash>
+			<enabled>true</enabled>
+			<inline-css-images>true</inline-css-images>
+		</splash>
+		<theme>default</theme>
+	</mobileweb>
+	<modules>
+	</modules>
+	<deployment-targets>
+		<target device="android">false</target>
+		<target device="ipad">false</target>
+		<target device="iphone">true</target>
+		<target device="mobileweb">false</target>
+		<target device="windows">false</target>
+	</deployment-targets>
+	<sdk-version>5.3.0.v20160502145620</sdk-version>
+</ti:app>
